@@ -44,7 +44,7 @@ public class Runigram {
 		in.readInt();
 		// Creates the image array
 		Color[][] image = new Color[numRows][numCols];
-		Color pix; 
+
 		for (int i =0; i < numRows; i++ ){
 			for (int j=0; j<numCols; j++){
 				int red = in.readInt();
@@ -265,6 +265,7 @@ public class Runigram {
 			int alpha = (n-i)/n; 
 			target = blend(source, target, alpha); 
 		}
+		display(target);
 	}
 	
 	/** Creates a canvas for the given image. */
