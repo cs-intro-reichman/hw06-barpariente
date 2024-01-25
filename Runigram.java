@@ -261,11 +261,13 @@ public class Runigram {
 		if ((rows != target.length) || (colms != target[0].length)){
 			target = scaled(target, colms, rows); 
 		}
+		Color[][] newImage = new Color[rows][colms];
 		for (int i=0; i<n; i++){
 			int alpha = (n-i)/n; 
-			target = blend(source, target, alpha); 
+			newImage = blend(source, target, alpha); 	
+			display(newImage);
+			StdDraw.pause(3000); 
 		}
-		display(target);
 	}
 	
 	/** Creates a canvas for the given image. */
