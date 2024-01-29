@@ -189,8 +189,8 @@ public class Runigram {
 		Color[][] newImage = new Color[height][width]; 
 		for (int i=0; i<height; i++){
 			for (int j=0; j<width; j++){ 
-				int newRows = (rows*i)/height; 
-				int newColm = (colms*j)/width; 
+				int newRows = i*(rows/height); 
+				int newColm = j*(colms/width); 
 
 				newImage[i][j] = image[newRows][newColm];
 			}
