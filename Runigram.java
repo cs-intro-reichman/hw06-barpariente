@@ -156,7 +156,7 @@ public class Runigram {
 		int r = pixel.getRed();
 		int g = pixel.getRed();
 		int b = pixel.getRed();
-		int lum = (int)(0.299 * r + 0.587 * g + 0.114 * b); 
+		int lum = (int)((0.299*r) + (0.587*g) + (0.114*b)); 
 		Color newPixle = new Color(lum, lum, lum); 
 		return newPixle;
 	}
