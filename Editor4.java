@@ -19,7 +19,5 @@ public class Editor4 {
 		Color[][] targetImage = Runigram.grayScaled(sourceImage);
         Runigram.setCanvas(sourceImage);
 		Runigram.morph(sourceImage, targetImage, n);
-
-        Runigram.display(sourceImage);
 	}
 }
