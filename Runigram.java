@@ -81,10 +81,8 @@ public class Runigram {
 		for (int i = 0; i <image.length; i++){
 			for (int j=0; j<image[i].length; j++ ){
 				print(image[i][j]);
-				if (j==image[i].length-1){
-					System.out.println("");
-				}
 			}
+			System.err.println();
 		}
 	}
 	
@@ -266,7 +264,7 @@ public class Runigram {
 			double alpha = (double)((n-i)/n); 
 			newImage = blend(source, target, alpha); 	
 			display(newImage);
-			StdDraw.pause(3000); 
+			StdDraw.pause(500); 
 		}
 	}
 	
