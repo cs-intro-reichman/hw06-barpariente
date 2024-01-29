@@ -169,7 +169,7 @@ public class Runigram {
 	public static Color[][] grayScaled(Color[][] image) {
 		//// Replace the following statement with your code
 		int rows = image.length;
-		int colms = image[1].length; 
+		int colms = image[0].length; 
 		Color[][] newImage = new Color[rows][colms]; 
 		for (int i=0; i<rows; i++){
 			for (int j=0; j<colms; j++){
@@ -263,7 +263,7 @@ public class Runigram {
 		}
 		Color[][] newImage = new Color[rows][colms];
 		for (int i=0; i<n; i++){
-			int alpha = (n-i)/n; 
+			double alpha = (double)((n-i)/n); 
 			newImage = blend(source, target, alpha); 	
 			display(newImage);
 			StdDraw.pause(3000); 
